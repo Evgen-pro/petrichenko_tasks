@@ -24,7 +24,7 @@ console.log(personalMovieDB);
 
 let num = 30;
 
-/* switch (num) {
+ switch (num) {
   case 22:
     console.log("Ok!");
     break;
@@ -41,9 +41,35 @@ do {
   num++;
 } while (num < 50);
 
-*/
 
-for (let i = 0; i < 30; i++) {
-  console.log(num);
-  num++;
+
+//drawing triangle
+
+
+
+
+let result = "";
+let length = 10;
+
+for (let i = 1; i < length; i++) {
+  for (let j = 0; j < i; j++) {
+    result += "*";
+  }
+  result += "\n";
+}
+
+console.log(result);
+
+
+// labels in a loop
+
+first: for (let i = 0; i < 3; i++) {
+  console.log(`First level: ${i}`);
+  for (let j = 0; j < 3; j++) {
+    console.log(`Second level: ${j}`);
+    for (let k = 0; k < 3; k++) {
+      if (k === 2) continue first;
+      console.log(`Third level: ${k}`);
+    }
+  }
 }
