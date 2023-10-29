@@ -16,3 +16,18 @@ function calculateVolumeAndArea(length) {
 }
 
 console.log(calculateVolumeAndArea(5));
+
+//Напишите функцию, которая будет определять номер купе по переданному ей номеру места. Наглядно:
+
+// Место для второй задачи
+
+function getCoupeNumber(num) {
+  if (typeof num !== "number" || num < 0 || !Number.isInteger(num)) {
+    return "Ошибка. Проверьте правильность введенного номера места"
+    
+  } else if (num === 0 || num > 36) {
+    return "Таких мест в вагоне не существует";
+  }
+
+  return Math.ceil(num/4);
+}
