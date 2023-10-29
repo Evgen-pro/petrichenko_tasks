@@ -37,7 +37,7 @@ const personalMovieDB = {
 
 function rememberMyFilms() {
   for (let i = 0; i < 2; i++) {
-    const a = prompt("Last film?", ""),
+    const a = prompt("Last film?", "").trim(),
       b = prompt("Grade?");
 
     if (a != null && b != null && a != "" && b != "" && a.length < 50) {
