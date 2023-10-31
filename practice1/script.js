@@ -74,7 +74,7 @@ const personalMovieDB = {
       } )
 
     }
-  }, 
+  } , 
   toggleVisibleMyDB: function() {
     if(personalMovieDB.privat) {
       personalMovieDB = false;
