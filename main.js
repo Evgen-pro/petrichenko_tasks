@@ -28,3 +28,38 @@ console.log(parseFloat(rez));
 
 const str1 = "    dcdc    ";
 console.log(str1.trim());
+
+
+// Динамическая типизация
+
+const fontSize = 26 + 'px';
+
+// To number
+
+console.log(typeof(Number('4')))
+
+console.log(typeof(+'4'))
+
+console.log(typeof(parseInt('15px')));
+
+// To booolean
+
+// 0, ''. null. underfined, NaN
+
+let switcher = null;
+if (switcher) {
+    console.log('working')
+} 
+
+switcher = 1;
+
+if (switcher) {
+    console.log('working')
+} 
+
+//----
+
+console.log(typeof(Boolean('4')))
+
+// 
+console.log(typeof(!!('4')))
